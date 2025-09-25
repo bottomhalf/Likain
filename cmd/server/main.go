@@ -10,7 +10,7 @@ import (
 func main() {
 	mgr := manager.NewManager()
 
-	http.Handle("/", http.FileServer(http.Dir("./../../frontend")))
+	http.Handle("/", http.FileServer(http.Dir("/frontend")))
 	http.HandleFunc("/ws", mgr.ServeWS)
 
 	fmt.Println("Server running at http://localhost:8080")

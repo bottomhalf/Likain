@@ -27,6 +27,9 @@ WORKDIR /root/
 # Copy binary from builder
 COPY --from=builder /app/likain .
 
+# After build stage, before CMD
+COPY ./frontend /frontend
+
 # Expose port (replace with your WebSocket port, e.g., 8080)
 EXPOSE 8080
 
