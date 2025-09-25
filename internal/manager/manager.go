@@ -31,6 +31,8 @@ func checkOrigin(r *http.Request) bool {
 	switch origin {
 	case "http://localhost:8080":
 		return true
+	case "https://www.axiupdeveloper.com":
+		return true
 	default:
 		return false
 	}
