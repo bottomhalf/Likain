@@ -1,7 +1,7 @@
 package client
 
 import (
-	"Likain/internal/event"
+	"Confeet/internal/event"
 	"encoding/json"
 	"log"
 	"time"

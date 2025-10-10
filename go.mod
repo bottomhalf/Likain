@@ -1,4 +1,4 @@
-module Likain
+module Confeet
 
 go 1.25.0
 

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Likain/internal/manager"
+	"Confeet/internal/manager"
 	"fmt"
 	"log"
 	"net/http"

@@ -1,8 +1,8 @@
 package manager
 
 import (
-	"Likain/internal/client"
-	"Likain/internal/event"
+	"Confeet/internal/client"
+	"Confeet/internal/event"
 	"errors"
 	"log"
 	"net/http"
@@ -31,7 +31,7 @@ func checkOrigin(r *http.Request) bool {
 	switch origin {
 	case "http://localhost:8080":
 		return true
-	case "https://www.axiupdeveloper.com":
+	case "https://www.confeet.com":
 		return true
 	default:
 		return false

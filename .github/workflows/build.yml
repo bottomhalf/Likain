@@ -35,4 +35,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/likain:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/confeet:latest

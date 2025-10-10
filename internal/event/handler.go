@@ -1,7 +1,7 @@
 package event
 
 import (
-	"Likain/internal/model"
+	"Confeet/internal/model"
 	"encoding/json"
 	"log"
 )

@@ -1,2 +1,2 @@
-# Likain
+# Confeet
 Chat server code

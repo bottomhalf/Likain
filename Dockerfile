@@ -14,7 +14,7 @@ RUN go mod download
 COPY . .
 
 # Build the Go binary statically
-RUN CGO_ENABLED=0 GOOS=linux go build -o likain ./cmd/server
+RUN CGO_ENABLED=0 GOOS=linux go build -o confeet ./cmd/server
 
 # ------------------------------
 # Stage 2: Run
@@ -25,7 +25,7 @@ FROM alpine:3.19
 WORKDIR /root/
 
 # Copy binary from builder
-COPY --from=builder /app/likain .
+COPY --from=builder /app/confeet .
 
 # After build stage, before CMD
 COPY ./frontend /frontend
@@ -34,4 +34,4 @@ COPY ./frontend /frontend
 EXPOSE 8080
 
 # Run the server
-CMD ["./likain"]
+CMD ["./confeet"]
